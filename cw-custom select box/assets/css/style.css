@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@import url("https://v1.fontapi.ir/css/Estedad");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: estedad;
+}
+body {
+  background-image: url(../img/travel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+}
+.container-custom {
+  background-color: rgba(103, 119, 107, 0.3);
+  width: 70%;
+  height: auto;
+  padding-top: 20px;
+  margin-top: 7%;
+}
+.title {
+  text-align: center;
+}
+.forminput,
+.selectbox {
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+  padding-right: 5px;
+
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+.selectbox {
+  color: #686767;
+}
+.bookingBtn {
+  background-color: yellow;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding-right: 5px;
+  height: 40px;
+  width: 70px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.bookingBtn-Wrapper {
+  text-align: center;
+}
+/* end of part 1 */
+
+/* *******************   part2: custom selectBox   *************************  */
+
+.selectBtn {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+
+  font-size: 13px;
+
+  border-radius: 5px;
+  padding: 0 8px;
+
+  color: #686767;
+}
+
+.content {
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+
+  display: none;
+
+  position: absolute;
+  right: 0;
+
+  overflow: auto;
+}
+.content .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 20px;
+
+  color: #686767;
+
+  position: relative;
+}
+
+.search input {
+  width: 95%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #686767;
+  padding-right: 5px;
+
+  margin: 0 auto;
+}
+.search i {
+  position: absolute;
+  left: 30px;
+}
+
+.content.active {
+  display: block;
+}
+
+.customSelectBox {
+  position: relative;
+}
+
+.options li {
+  font-size: 12px;
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+.options li:nth-child(even) {
+  background-color: #efefef;
+}
+
+.options li:hover{
+  background-color: red;
+}
